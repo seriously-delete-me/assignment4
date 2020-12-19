@@ -3,12 +3,13 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include "misc_functions.h"
+#include "math_functions.h"
 
 void menu(void) {
     int size_of_choices_array = 0;
 
     char choices[][60] = {
-        "01: Factorial", "02: Prime Factors"
+        "01: Factorial", "02: Radian/Degree converter", "03 Prime Factors"
     };
 
     size_of_choices_array = sizeof(choices) / sizeof(*choices);
@@ -35,9 +36,10 @@ void menu(void) {
             factorial();
             break;
         case 2:
-            prime();
+	    radian_degrees_converter();
             break;
         case 3:
+            prime();
             break;
         default:
             break;
