@@ -1,4 +1,4 @@
-#include "my_functions.h"
+#include "misc_functions.h"
 
 int main(void) {
     menu();

@@ -3,6 +3,4 @@
 
 void menu(void);
 
-void factorial(void);
-
 #endif // !ASSIGNMENT4_MY_FUNCTIONS_H
