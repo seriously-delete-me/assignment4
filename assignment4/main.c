@@ -1,10 +1,6 @@
-#include <stdio.h>
+#include "my_functions.h"
 
 int main(void) {
-    int selection = 0;
-    puts("Type 0 to exit.");
-    printf("Select the function to run: ");
-    scanf("%d", &selection);
-    printf("You have selected: %d", selection);
+    menu();
     return 0;
 }
