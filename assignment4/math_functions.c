@@ -23,3 +23,35 @@ void factorial(void) {
 
     printf("The factorial of %d is %llu\n", number, factorial);
 }
+
+void primeFactors(int number);
+
+void prime(void) {
+    int upperLimit = 0;
+    printf("Give me the number whose prime factors you wish to know: ");
+    scanf("%d", &upperLimit);
+
+    primeFactors(upperLimit);
+}
+
+void primeFactors(int number)
+{
+    while (number % 2 == 0)
+    {
+        printf("%d ", 2);
+        number = number / 2;
+    }
+
+    for (int i = 3; i <= sqrt(number); i = i + 2)
+    {
+        while (number % i == 0)
+        {
+            printf("%d ", i);
+            number = number / i;
+        }
+    }
+
+    if (number > 2)
+        printf("%d ", number);
+    puts("");
+}
